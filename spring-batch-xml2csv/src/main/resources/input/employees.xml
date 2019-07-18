@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee-data>
+	<emp>
+		<city>Delhi</city>
+		<empId>200</empId>
+		<name>Ankit</name>
+		<salary>45000.0</salary>
+	</emp>
+	<emp>
+		<city>Hyderabad</city>
+		<empId>201</empId>
+		<name>Nupur</name>
+		<salary>56000.0</salary>
+	</emp>
+	<emp>
+		<city>Chennai</city>
+		<empId>202</empId>
+		<name>Kirti</name>
+		<salary>56000.0</salary>
+	</emp>
+	<emp>
+		<city>Chennai</city>
+		<empId>204</empId>
+		<name>Rajaram</name>
+		<salary>89000.0</salary>
+	</emp>
+	<emp>
+		<city>Hyderabad</city>
+		<empId>205</empId>
+		<name>Chandra</name>
+		<salary>76000.0</salary>
+	</emp>
+</employee-data>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee-data>
+	<emp>
+		<city>London</city>
+		<empId>100</empId>
+		<name>John</name>
+		<salary>45000.0</salary>
+	</emp>
+	<emp>
+		<city>Hyderabad</city>
+		<empId>101</empId>
+		<name>Scott</name>
+		<salary>55000.0</salary>
+	</emp>
+	<emp>
+		<city>Hyderabad</city>
+		<empId>102</empId>
+		<name>Pavan</name>
+		<salary>55000.0</salary>
+	</emp>
+	<emp>
+		<city>bangalore</city>
+		<empId>103</empId>
+		<name>Ajay</name>
+		<salary>58000.0</salary>
+	</emp>
+	<emp>
+		<city>Gujrat</city>
+		<empId>104</empId>
+		<name>Nirav</name>
+		<salary>75000.0</salary>
+	</emp>
+	<emp>
+		<city>Forest</city>
+		<empId>107</empId>
+		<name>Tiger</name>
+		<salary>75000.0</salary>
+	</emp>
+</employee-data>
