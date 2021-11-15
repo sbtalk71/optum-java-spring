@@ -2,6 +2,7 @@ package com.demo.unittesting;
 
 import com.demo.app.Calculator;
 
+import com.demo.app.EmpNotFoundException;
 import org.junit.jupiter.api.Assertions;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
@@ -26,6 +27,16 @@ public class MockTests {
         when(idemo.getName()).thenReturn("Shantanu");
         MyNameService service=new MyNameService(idemo);
         assertEquals("Shantanu"+" welcome to Mockito",service.getMessage());
+
+    }
+
+    @Test
+    public void testFindNameException() throws EmpNotFoundException {
+        when(idemo.getName()).thenReturn("Shantanu");
+        MyNameService service=new MyNameService(idemo);
+
+        Exception ex=assertThrows(EmpNotFoundException.class,()->service.findName("shantanu"));
+        assertTrue(ex.getClass().getSimpleName().equals("EmpNotFoundException"));
 
     }
 }

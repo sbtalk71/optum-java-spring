@@ -1,6 +1,6 @@
-com/demo/app/Calculator.java
- com.demo.app.Calculator
-com/demo/app/Util.java
- com.demo.app.Util
 com/demo/app/MyServlet.java
  com.demo.app.MyServlet
+com/demo/app/Util.java
+ com.demo.app.Util
+com/demo/app/Calculator.java
+ com.demo.app.Calculator

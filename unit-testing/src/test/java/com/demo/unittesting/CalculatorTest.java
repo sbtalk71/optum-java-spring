@@ -1,19 +1,16 @@
 package com.demo.unittesting;
 
 import com.demo.app.Calculator;
-import org.junit.After;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
 
-
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 
 public class CalculatorTest {
 
     static Calculator cal = null;
 
-@BeforeAll
+    @BeforeAll
     public static void setUp() {
         cal = new Calculator();
         System.out.println("Setup called....");
@@ -48,13 +45,22 @@ public class CalculatorTest {
     @Test
     public void testDevide() {
 
-        assertEquals(1, cal.devide(10, 10));
+        assertEquals(1, cal.divide(10, 10));
+    }
+
+    @Test
+    public void testDevideByZero() {
+        Exception ex=assertThrows(ArithmeticException.class,()->cal.divide(10,0));
+       // assertEquals("/ by zero",ex.getMessage());
+        System.out.println(ex.getClass().getSimpleName());
+        assertTrue(ex.getMessage().contains("zero"));
+        assertTrue(ex.getClass().getSimpleName().equals("ArithmeticException"));
     }
 
 
     @AfterAll
-    public static void cleanUp(){
-        cal=null;
+    public static void cleanUp() {
+        cal = null;
         System.out.println("Clean up called");
     }
 }
